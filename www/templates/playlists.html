@@ -1,0 +1,13 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+    <br>
+    <button class="button button-block button-positive" ng-click="chk()" type="button">chk</button>
+    <button class="button button-block button-royal" ng-click="getfun()" type="button">get</button>
+    <button class="button button-block button-assertive" ng-click="postfun()" type="button">post</button>
+  </ion-content>
+</ion-view>
